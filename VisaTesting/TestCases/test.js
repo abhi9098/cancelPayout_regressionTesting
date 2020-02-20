@@ -148,7 +148,7 @@ let options = {
     describe('Checking Mapping of Request to Response Fields',() => {
            
         it('Checking originatorDetail.acquiringBIN Mapping',  (done) =>{
-         expect(200).to.equal(400);
+         expect(response.body.originatorDetail.acquiringBIN).to.equal(RP_CancelPayload.originatorDetail.acquiringBIN);
             done();
         }).timeout(5000);
             
